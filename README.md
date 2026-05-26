@@ -184,10 +184,8 @@ O backend Django deve estar rodando para o aplicativo Flutter funcionar corretam
 
 ---
 
-# 👨‍💻 Autor
+# 👨‍💻 Desenvolvido por
 
-Desenvolvido por
-
-Alexandre Luiz Demuner Venturini.
-Julia de Souza Sacht
+Alexandre Luiz Demuner Venturini  
+Julia de Souza Sacht  
 Laura Vilela Couto
