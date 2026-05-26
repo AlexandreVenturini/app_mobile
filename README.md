@@ -162,11 +162,25 @@ flutter pub get
 
 ---
 
-## 3️⃣ Execute o aplicativo
+## 3️⃣ Verifique os dispositivos disponíveis
+
+```bash
+flutter devices
+```
+
+---
+
+## 4️⃣ Execute o aplicativo
 
 ```bash
 flutter run
 ```
+
+---
+
+# ⚠️ Observação
+
+O backend Django deve estar rodando para o aplicativo Flutter funcionar corretamente.
 
 ---
 
