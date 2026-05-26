@@ -1,90 +1,50 @@
-# 📦 API Loja PC
+# 📦 App Mobile - Loja PC
 
-API desenvolvida com Django para gerenciamento de produtos de uma loja de computadores.
+Projeto completo contendo:
+
+- Backend API desenvolvido com Django
+- Aplicativo mobile desenvolvido com Flutter
+- Banco de dados MySQL
 
 ---
 
 # 🚀 Tecnologias Utilizadas
 
+## Backend
 - Python 3
 - Django
 - Django REST Framework
 - MySQL
-- PyMySQL
+
+## Frontend Mobile
+- Flutter
+- Dart
+
+## Ambiente
 - Laragon
+- Git
 
 ---
 
 # 📁 Estrutura do Projeto
 
 ```bash
-api_loja_pc/
-├── api_loja_pc/
-├── loja/
-├── manage.py
-├── loja_pc_db.sql
-└── requirements.txt
+app_mobile/
+├── api_loja_pc/      # Backend Django
+├── app_loja_pc/      # Aplicativo Flutter
+└── loja_pc_db.sql    # Banco de dados MySQL
 ```
 
 ---
 
 # ⚙️ Pré-requisitos
 
-Antes de iniciar o projeto, você precisa ter instalado:
+Antes de iniciar o projeto, instale:
 
 - Python 3
+- Flutter SDK
 - Laragon
 - Git
-
----
-
-# 🛠️ Instalação do Projeto
-
-## 1️⃣ Clone o repositório
-
-```bash
-git clone https://github.com/AlexandreVenturini/app_mobile.git
-```
-
----
-
-## 2️⃣ Acesse a pasta do projeto
-
-```bash
-cd app_mobile/api_loja_pc
-```
-
----
-
-## 3️⃣ Crie o ambiente virtual
-
-```bash
-python -m venv venv
-```
-
----
-
-## 4️⃣ Ative o ambiente virtual
-
-### Windows PowerShell
-
-```powershell
-.\venv\Scripts\Activate.ps1
-```
-
-### Windows CMD
-
-```cmd
-venv\Scripts\activate
-```
-
----
-
-## 5️⃣ Instale as dependências
-
-```bash
-python -m pip install django djangorestframework django-cors-headers pymysql
-```
 
 ---
 
@@ -128,36 +88,55 @@ loja_pc_db.sql
 
 ---
 
-# ⚙️ Configuração do Django
+# 🔧 Backend (Django)
 
-No arquivo:
+## 1️⃣ Acesse a pasta do backend
 
-```txt
-api_loja_pc/settings.py
-```
-
-adicione no topo:
-
-```python
-import pymysql
-pymysql.install_as_MySQLdb()
+```bash
+cd api_loja_pc
 ```
 
 ---
 
-# ▶️ Executando o Projeto
+## 2️⃣ Crie o ambiente virtual
 
-Com o ambiente virtual ativado:
+```bash
+python -m venv venv
+```
+
+---
+
+## 3️⃣ Ative o ambiente virtual
+
+### PowerShell
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+### CMD
+
+```cmd
+venv\Scripts\activate
+```
+
+---
+
+## 4️⃣ Instale as dependências
+
+```bash
+python -m pip install django djangorestframework django-cors-headers mysqlclient
+```
+
+---
+
+## 5️⃣ Inicie o servidor
 
 ```bash
 python manage.py runserver
 ```
 
----
-
-# 🌐 Acesso da API
-
-Após iniciar o servidor:
+A API estará disponível em:
 
 ```txt
 http://127.0.0.1:8000/
@@ -165,11 +144,29 @@ http://127.0.0.1:8000/
 
 ---
 
-# 📌 Observações
+# 📱 Frontend (Flutter)
 
-- O projeto utiliza banco de dados MySQL.
-- Certifique-se de que o MySQL esteja iniciado no Laragon antes de executar o servidor.
-- Caso ocorra erro relacionado ao banco, verifique se o banco `loja_pc_db` foi criado corretamente.
+## 1️⃣ Acesse a pasta do app Flutter
+
+```bash
+cd app_loja_pc
+```
+
+---
+
+## 2️⃣ Instale as dependências
+
+```bash
+flutter pub get
+```
+
+---
+
+## 3️⃣ Execute o aplicativo
+
+```bash
+flutter run
+```
 
 ---
 
